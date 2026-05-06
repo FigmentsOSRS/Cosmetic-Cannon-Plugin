@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+build/
+gradle.properties
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local dev scripts
+run.ps1
