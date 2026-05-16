@@ -121,12 +121,6 @@ public class CosmeticCannonPlugin extends Plugin
 				return swapForDirection(dirIndex).getProjectileId();
 			}
 
-			case EXPERIMENTAL:
-			{
-				int dirIndex = directionIndex(dx, dy);
-				return experimentalForDirection(dirIndex);
-			}
-
 			default:
 				return -1;
 		}
@@ -159,26 +153,6 @@ public class CosmeticCannonPlugin extends Plugin
 			case 6: return config.projectileSouth();
 			case 7: return config.projectileSouthEast();
 			default: return ProjectileSwap.NONE;
-		}
-	}
-
-	/**
-	 * Returns the raw projectile ID entered for the given direction index.
-	 * Used in Experimental mode. 0 means no swap.
-	 */
-	private int experimentalForDirection(int dirIndex)
-	{
-		switch (dirIndex)
-		{
-			case 0: return config.experimentalEast();
-			case 1: return config.experimentalNorthEast();
-			case 2: return config.experimentalNorth();
-			case 3: return config.experimentalNorthWest();
-			case 4: return config.experimentalWest();
-			case 5: return config.experimentalSouthWest();
-			case 6: return config.experimentalSouth();
-			case 7: return config.experimentalSouthEast();
-			default: return 0;
 		}
 	}
 

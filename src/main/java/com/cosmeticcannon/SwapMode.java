@@ -5,10 +5,9 @@ package com.cosmeticcannon;
  */
 public enum SwapMode
 {
-	RANDOM       ("Random"),
-	RAINBOW      ("Rainbow Cycle"),
-	CUSTOM       ("Custom (per direction)"),
-	EXPERIMENTAL ("Experimental (enter IDs)");
+	RANDOM  ("Random"),
+	RAINBOW ("Rainbow Cycle"),
+	CUSTOM  ("Custom (per direction)");
 
 	private final String displayName;
 

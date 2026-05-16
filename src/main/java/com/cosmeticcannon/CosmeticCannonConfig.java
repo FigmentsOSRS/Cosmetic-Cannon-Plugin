@@ -32,8 +32,7 @@ public interface CosmeticCannonConfig extends Config
 		name = "Mode",
 		description = "<html>Random: each shot picks a random projectile from the preset list.<br>" +
 			"Rainbow: cycles through a spectrum of colours shot by shot.<br>" +
-			"Custom: choose a replacement per firing direction from the preset list.<br>" +
-			"Experimental: manually enter a projectile ID per firing direction.</html>",
+			"Custom: choose a replacement per firing direction from the preset list.</html>",
 		section = generalSection,
 		position = 1
 	)
@@ -150,116 +149,5 @@ public interface CosmeticCannonConfig extends Config
 	default ProjectileSwap projectileNorthWest()
 	{
 		return ProjectileSwap.NONE;
-	}
-
-	// -------------------------------------------------------------------------
-	// Experimental direction overrides — raw projectile ID entry per direction.
-	// Active when Mode is set to Experimental. 0 = no swap for that direction.
-	// -------------------------------------------------------------------------
-
-	@ConfigSection(
-		name = "Experimental Direction Overrides",
-		description = "Only used when Mode is set to Experimental. " +
-			"Enter a raw projectile ID for each of the 8 firing directions. " +
-			"0 leaves that direction unchanged. " +
-			"Use the RuneLite DevTools projectile inspector to find IDs.",
-		position = 3
-	)
-	String experimentalSection = "experimental";
-
-	@ConfigItem(
-		keyName = "experimentalNorth",
-		name = "North",
-		description = "Raw projectile ID when the cannon fires North. 0 = no swap.",
-		section = experimentalSection,
-		position = 0
-	)
-	default int experimentalNorth()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalNorthEast",
-		name = "North-East",
-		description = "Raw projectile ID when the cannon fires North-East. 0 = no swap.",
-		section = experimentalSection,
-		position = 1
-	)
-	default int experimentalNorthEast()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalEast",
-		name = "East",
-		description = "Raw projectile ID when the cannon fires East. 0 = no swap.",
-		section = experimentalSection,
-		position = 2
-	)
-	default int experimentalEast()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalSouthEast",
-		name = "South-East",
-		description = "Raw projectile ID when the cannon fires South-East. 0 = no swap.",
-		section = experimentalSection,
-		position = 3
-	)
-	default int experimentalSouthEast()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalSouth",
-		name = "South",
-		description = "Raw projectile ID when the cannon fires South. 0 = no swap.",
-		section = experimentalSection,
-		position = 4
-	)
-	default int experimentalSouth()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalSouthWest",
-		name = "South-West",
-		description = "Raw projectile ID when the cannon fires South-West. 0 = no swap.",
-		section = experimentalSection,
-		position = 5
-	)
-	default int experimentalSouthWest()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalWest",
-		name = "West",
-		description = "Raw projectile ID when the cannon fires West. 0 = no swap.",
-		section = experimentalSection,
-		position = 6
-	)
-	default int experimentalWest()
-	{
-		return 0;
-	}
-
-	@ConfigItem(
-		keyName = "experimentalNorthWest",
-		name = "North-West",
-		description = "Raw projectile ID when the cannon fires North-West. 0 = no swap.",
-		section = experimentalSection,
-		position = 7
-	)
-	default int experimentalNorthWest()
-	{
-		return 0;
 	}
 }

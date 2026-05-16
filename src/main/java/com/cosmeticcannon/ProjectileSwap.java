@@ -86,43 +86,47 @@ public enum ProjectileSwap
 	// -------------------------------------------------------------------------
 	// Additional projectiles - researched via RuneMonk entity viewer
 	// -------------------------------------------------------------------------
-	SMALL_FIREBALL            ("Orange - 88",           88),
+	MONKEY                    ("Monkey - 207",          207),
+	FISH                      ("Fish - 528",            528),
+	DWARF                     ("Dwarf - 852",           852),
 
-	RED_SPIKED_CRYSTAL        ("Red - 1667",          1667),
-	RED_DIAMOND               ("Red - 1578",          1578),
-	DARK_RED_DIAMOND          ("Red - 1682",          1682),
-	RED_DEBRIS                ("Red - 2002",          2002),
-	RED_STARBURST             ("Red - 2246",          2246),
-	GREEN_EXPLOSION           ("Green - 2684",        2684),
-	RED_SKULL                 ("Red - 2340",          2340),
-	BLOOD_SPHERE              ("Red - 1784",          1784),
+	SMALL_FIREBALL            ("Orange - 88",            88),
 
-	YELLOW_ORB                ("Yellow - 1522",       1522),
-	GOLD_TEARDROP             ("Gold - 2339",         2339),
-	GOLD_CROWN_PORTAL         ("Gold - 2632",         2632),
-	GOLD_FLAMING_SKULL        ("Gold - 2855",         2855),
-	GOLDEN_LEAF               ("Gold - 3321",         3321),
+	RED_SPIKED_CRYSTAL        ("Red - 1667",           1667),
+	RED_DIAMOND               ("Red - 1578",           1578),
+	DARK_RED_DIAMOND          ("Red - 1682",           1682),
+	RED_DEBRIS                ("Red - 2002",           2002),
+	RED_STARBURST             ("Red - 2246",           2246),
+	GREEN_EXPLOSION           ("Green - 2684",         2684),
+	RED_SKULL                 ("Red - 2340",           2340),
+	BLOOD_SPHERE              ("Red - 1784",           1784),
 
-	GREEN_FLAME               ("Green - 1349",        1349),
-	DARK_GREEN_ORB            ("Green - 1470",        1470),
-	GREEN_SPHERE              ("Green - 2167",        2167),
-	EARTH_ROCK                ("Brown - 2915",        2915),
+	YELLOW_ORB                ("Yellow - 1522",        1522),
+	GOLD_TEARDROP             ("Gold - 2339",          2339),
+	GOLD_CROWN_PORTAL         ("Gold - 2632",          2632),
+	GOLD_FLAMING_SKULL        ("Gold - 2855",          2855),
+	GOLDEN_LEAF               ("Gold - 3321",          3321),
 
-	CYAN_SPHERE               ("Cyan - 1479",         1479),
-	DARK_TEAL_CRYSTAL         ("Teal - 1497",         1497),
-	BLUE_CRYSTAL_CHUNK        ("Blue - 2434",         2434),
-	CYAN_BUBBLE_CLUSTER       ("Cyan - 3316",         3316),
+	GREEN_FLAME               ("Green - 1349",         1349),
+	DARK_GREEN_ORB            ("Green - 1470",         1470),
+	GREEN_SPHERE              ("Green - 2167",         2167),
+	EARTH_ROCK                ("Brown - 2915",         2915),
 
-	BLUE_VORTEX               ("Blue - 1459",         1459),
-	BLUE_FLAME                ("Blue - 2917",         2917),
-	BLUE_CRYSTAL_WAVES        ("Blue - 3141",         3141),
+	CYAN_SPHERE               ("Cyan - 1479",          1479),
+	DARK_TEAL_CRYSTAL         ("Teal - 1497",          1497),
+	BLUE_CRYSTAL_CHUNK        ("Blue - 2434",          2434),
+	CYAN_BUBBLE_CLUSTER       ("Cyan - 3316",          3316),
 
-	PURPLE_DUAL_ORBS          ("Purple - 1327",       1327),
-	PURPLE_DIAMOND            ("Purple - 1735",       1735),
-	PURPLE_FLAME              ("Purple - 2007",       2007),
+	BLUE_VORTEX               ("Blue - 1459",          1459),
+	BLUE_FLAME                ("Blue - 2917",          2917),
+	BLUE_CRYSTAL_WAVES        ("Blue - 3141",          3141),
 
-	PINK_SPIKED_CRYSTAL       ("Pink - 1471",         1471),
-	PINK_FLAME                ("Pink - 1764",         1764);
+	PURPLE_DUAL_ORBS          ("Purple - 1327",        1327),
+	PURPLE_DIAMOND            ("Purple - 1735",        1735),
+	PURPLE_FLAME              ("Purple - 2007",        2007),
+
+	PINK_SPIKED_CRYSTAL       ("Pink - 1471",          1471),
+	PINK_FLAME                ("Pink - 1764",          1764);
 
 	// -------------------------------------------------------------------------
 	// Rainbow sequence - spectrum-ordered for a smooth colour cycle.
